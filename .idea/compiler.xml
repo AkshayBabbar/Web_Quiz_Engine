@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Problems-Account__1__main" target="11" />
+      <module name="Problems-Account__1__test" target="11" />
+      <module name="Problems-Account_and_its_owner_main" target="11" />
+      <module name="Problems-Account_and_its_owner_test" target="11" />
+      <module name="Problems-Account_main" target="11" />
+      <module name="Problems-Account_test" target="11" />
+      <module name="Problems-Army_main" target="11" />
+      <module name="Problems-Army_test" target="11" />
+      <module name="Problems-Avoid_division_by_zero_main" target="11" />
+      <module name="Problems-Avoid_division_by_zero_test" target="11" />
+      <module name="Problems-Avoid_NPE_main" target="11" />
+      <module name="Problems-Avoid_NPE_test" target="11" />
+      <module name="Problems-Balance_management_main" target="11" />
+      <module name="Problems-Balance_management_test" target="11" />
+      <module name="Problems-Bank_account_main" target="11" />
+      <module name="Problems-Bank_account_test" target="11" />
+      <module name="Problems-Complex_main" target="11" />
+      <module name="Problems-Complex_numbers__1__main" target="11" />
+      <module name="Problems-Complex_numbers__1__test" target="11" />
+      <module name="Problems-Complex_numbers_main" target="11" />
+      <module name="Problems-Complex_numbers_test" target="11" />
+      <module name="Problems-Complex_test" target="11" />
+      <module name="Problems-Concat_positive_numbers_main" target="11" />
+      <module name="Problems-Concat_positive_numbers_test" target="11" />
+      <module name="Problems-Creating_list_main" target="11" />
+      <module name="Problems-Creating_list_test" target="11" />
+      <module name="Problems-Employee_main" target="11" />
+      <module name="Problems-Employee_test" target="11" />
+      <module name="Problems-Find_the_nearest_number_main" target="11" />
+      <module name="Problems-Find_the_nearest_number_test" target="11" />
+      <module name="Problems-Fix_the_non-compiled_hierarchy_main" target="11" />
+      <module name="Problems-Fix_the_non-compiled_hierarchy_test" target="11" />
+      <module name="Problems-Getting_the_fullname_main" target="11" />
+      <module name="Problems-Getting_the_fullname_test" target="11" />
+      <module name="Problems-Guest_list_of_a_hotel_main" target="11" />
+      <module name="Problems-Guest_list_of_a_hotel_test" target="11" />
+      <module name="Problems-Output_the_list's_elements_main" target="11" />
+      <module name="Problems-Output_the_list's_elements_test" target="11" />
+      <module name="Problems-Pastry_packing_optimization_main" target="11" />
+      <module name="Problems-Pastry_packing_optimization_test" target="11" />
+      <module name="Problems-Patient_needs_a_doctor_main" target="11" />
+      <module name="Problems-Patient_needs_a_doctor_test" target="11" />
+      <module name="Problems-Phone_main" target="11" />
+      <module name="Problems-Phone_test" target="11" />
+      <module name="Problems-Preparing_full_name_main" target="11" />
+      <module name="Problems-Preparing_full_name_test" target="11" />
+      <module name="Problems-Return_empty_string_when_argument_is_null_main" target="11" />
+      <module name="Problems-Return_empty_string_when_argument_is_null_test" target="11" />
+      <module name="Problems-Time_as_a_string_main" target="11" />
+      <module name="Problems-Time_as_a_string_test" target="11" />
+      <module name="Problems-User_main" target="11" />
+      <module name="Problems-User_test" target="11" />
+      <module name="util_main" target="1.8" />
+      <module name="util_test" target="1.8" />
+      <module name="Web_Quiz_Engine-task_main" target="11" />
+      <module name="Web_Quiz_Engine-task_test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

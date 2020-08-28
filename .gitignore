@@ -1,0 +1,22 @@
+# Project exclude paths
+/.gradle/
+/Problems/Account/build/
+/Problems/Avoid division by zero/out/
+/Problems/Avoid division by zero/out/production/classes/
+/Problems/Balance management/out/
+/Problems/Balance management/out/production/classes/
+/Problems/Concat positive numbers/out/
+/Problems/Concat positive numbers/out/production/classes/
+/Problems/Creating list/out/
+/Problems/Creating list/out/production/classes/
+/Problems/Employee/out/
+/Problems/Employee/out/production/classes/
+/Problems/Output the list's elements/out/
+/Problems/Output the list's elements/out/production/classes/
+/Problems/Patient needs a doctor/out/
+/Problems/Patient needs a doctor/out/production/classes/
+/Problems/Preparing full name/out/
+/Problems/Preparing full name/out/production/classes/
+/Web Quiz Engine/task/build/
+/Web Quiz Engine/task/out/
+/Web Quiz Engine/task/out/production/classes/

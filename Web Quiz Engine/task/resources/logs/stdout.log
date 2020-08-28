@@ -1,0 +1,833 @@
+2020-08-27 01:55:36.904  INFO 20396 --- [Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on LAPTOP-SA4OJ0K2 with PID 20396 (started by Akshay Babbar in F:\Development\Web Quiz Engine\Web Quiz Engine\task)
+2020-08-27 01:55:36.944  INFO 20396 --- [Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
+2020-08-27 01:55:44.543  INFO 20396 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-27 01:55:44.992  INFO 20396 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 386ms. Found 2 JPA repository interfaces.
+2020-08-27 01:55:46.908  INFO 20396 --- [Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-27 01:55:48.385  INFO 20396 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-08-27 01:55:48.450  INFO 20396 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-27 01:55:48.451  INFO 20396 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-27 01:55:49.128  INFO 20396 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-27 01:55:49.129 DEBUG 20396 --- [Test worker] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-08-27 01:55:49.130  INFO 20396 --- [Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11585 ms
+2020-08-27 01:55:49.759  INFO 20396 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-27 01:55:50.666  INFO 20396 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-27 01:55:50.706  INFO 20396 --- [Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../quizdb'
+2020-08-27 01:55:52.784  INFO 20396 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-27 01:55:53.269  INFO 20396 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-08-27 01:55:54.306  INFO 20396 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-27 01:55:55.262  INFO 20396 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-27 01:55:58.415  INFO 20396 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-27 01:55:58.463  INFO 20396 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-27 01:56:00.583  WARN 20396 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-27 01:56:03.661 DEBUG 20396 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2020-08-27 01:56:04.374  INFO 20396 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-08-27 01:56:05.997  INFO 20396 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@548aa3c3, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a0067d4, org.springframework.security.web.header.HeaderWriterFilter@2b1469f4, org.springframework.security.web.authentication.logout.LogoutFilter@db58570, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@778ee7be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46e662c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7dbee484, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fe167d1, org.springframework.security.web.session.SessionManagementFilter@6e2a2755, org.springframework.security.web.access.ExceptionTranslationFilter@510d3fbe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bb5e82f]
+2020-08-27 01:56:06.139  INFO 20396 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-27 01:56:06.763  INFO 20396 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-27 01:56:06.891 DEBUG 20396 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-08-27 01:56:07.310 DEBUG 20396 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-08-27 01:56:07.530 DEBUG 20396 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-08-27 01:56:08.236  INFO 20396 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-27 01:56:08.344  INFO 20396 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-27 01:56:08.525  INFO 20396 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-27 01:56:09.410  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-08-27 01:56:09.426  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-08-27 01:56:09.445  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2020-08-27 01:56:09.471  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2020-08-27 01:56:09.479  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2020-08-27 01:56:09.486  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2020-08-27 01:56:09.492  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2020-08-27 01:56:09.497  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2020-08-27 01:56:09.561  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2020-08-27 01:56:09.573  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2020-08-27 01:56:09.581  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2020-08-27 01:56:09.607  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2020-08-27 01:56:09.631  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2020-08-27 01:56:09.640  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2020-08-27 01:56:09.684  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2020-08-27 01:56:09.693  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2020-08-27 01:56:09.698  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2020-08-27 01:56:09.707  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2020-08-27 01:56:09.713  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingPOST_1
+2020-08-27 01:56:09.720  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2020-08-27 01:56:10.386  INFO 20396 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-08-27 01:56:10.399  INFO 20396 --- [Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 35.829 seconds (JVM running for 42.199)
+2020-08-27 01:56:12.149  INFO 20396 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-27 01:56:12.155  INFO 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-27 01:56:12.157 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-08-27 01:56:12.181 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-08-27 01:56:12.182  INFO 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2020-08-27 01:56:12.295 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/register", parameters={}
+2020-08-27 01:56:12.354 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.UserController#registerUser(User)
+2020-08-27 01:56:12.759 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User{id=null, email='test@google.com', password='qwerty'}]
+2020-08-27 01:56:14.443 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:14.445 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [User{id=1, email='test@google.com', password='$2a$10$SgcTJ7gdtN.Zuu5uNDFrtOSA9iBybiTqtT66x/IiAef67sq (truncated)...]
+2020-08-27 01:56:14.512 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:14.540 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/register", parameters={}
+2020-08-27 01:56:14.542 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.UserController#registerUser(User)
+2020-08-27 01:56:14.556 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User{id=null, email='user@google.com', password='12345'}]
+2020-08-27 01:56:15.093 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:15.093 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [User{id=2, email='user@google.com', password='$2a$10$JWWsjvLRujuI12XCFmZy4e6BokeWAbTDKB3B1MRmm.30is1 (truncated)...]
+2020-08-27 01:56:15.100 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:15.109 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/register", parameters={}
+2020-08-27 01:56:15.111 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.UserController#registerUser(User)
+2020-08-27 01:56:15.112 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User{id=null, email='google.com', password='asddfggh'}]
+2020-08-27 01:56:15.312  WARN 20396 --- [http-nio-8889-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<engine.entity.User> engine.controller.UserController.registerUser(engine.entity.User): [Field error in object 'user' on field 'email': rejected value [google.com]; codes [Pattern.user.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@77223414,\w+@\w+\.\w+]; default message [must match "\w+@\w+\.\w+"]] ]
+2020-08-27 01:56:15.313 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:15.362 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:15.379 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:15.402 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:15.403 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:15 IST 2020, status=400, error=Bad Request, errors=[Field error in objec (truncated)...]
+2020-08-27 01:56:15.662 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/register", parameters={}
+2020-08-27 01:56:15.667 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.UserController#registerUser(User)
+2020-08-27 01:56:15.669 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User{id=null, email='well@googlecom', password='rtyfgcxsfd'}]
+2020-08-27 01:56:15.672  WARN 20396 --- [http-nio-8889-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<engine.entity.User> engine.controller.UserController.registerUser(engine.entity.User): [Field error in object 'user' on field 'email': rejected value [well@googlecom]; codes [Pattern.user.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@77223414,\w+@\w+\.\w+]; default message [must match "\w+@\w+\.\w+"]] ]
+2020-08-27 01:56:15.674 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:15.676 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:15.678 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:15.680 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:15.682 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:15 IST 2020, status=400, error=Bad Request, errors=[Field error in objec (truncated)...]
+2020-08-27 01:56:15.694 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:15.713 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/register", parameters={}
+2020-08-27 01:56:15.725 DEBUG 20396 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.UserController#registerUser(User)
+2020-08-27 01:56:15.732 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User{id=null, email='test@google.com', password='rtyfgcxsfd1'}]
+2020-08-27 01:56:15.770 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:15.799 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:15.800 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2020-08-27 01:56:15.802 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:15.821 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/register", parameters={}
+2020-08-27 01:56:15.824 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.UserController#registerUser(User)
+2020-08-27 01:56:15.827 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User{id=null, email='someuser@gmail.com', password='1234'}]
+2020-08-27 01:56:15.835  WARN 20396 --- [http-nio-8889-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<engine.entity.User> engine.controller.UserController.registerUser(engine.entity.User): [Field error in object 'user' on field 'password': rejected value [1234]; codes [Size.user.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password],2147483647,5]; default message [size must be between 5 and 2147483647]] ]
+2020-08-27 01:56:15.839 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:15.841 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:15.843 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:15.844 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:15.845 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:15 IST 2020, status=400, error=Bad Request, errors=[Field error in objec (truncated)...]
+2020-08-27 01:56:15.871 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:15.889 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/register", parameters={}
+2020-08-27 01:56:15.899 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.UserController#registerUser(User)
+2020-08-27 01:56:15.900 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User{id=null, email='someuser2@gmail.com', password='123'}]
+2020-08-27 01:56:15.902  WARN 20396 --- [http-nio-8889-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<engine.entity.User> engine.controller.UserController.registerUser(engine.entity.User): [Field error in object 'user' on field 'password': rejected value [123]; codes [Size.user.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password],2147483647,5]; default message [size must be between 5 and 2147483647]] ]
+2020-08-27 01:56:15.903 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:15.905 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:15.907 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:15.910 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:15.911 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:15 IST 2020, status=400, error=Bad Request, errors=[Field error in objec (truncated)...]
+2020-08-27 01:56:15.918 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:17.665  WARN 20396 --- [http-nio-8889-exec-9] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [984] milliseconds.
+2020-08-27 01:56:17.676 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes", parameters={}
+2020-08-27 01:56:17.681 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getAllQuizzes()
+2020-08-27 01:56:17.869 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:17.870 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+2020-08-27 01:56:17.873 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:18.079 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes", parameters={}
+2020-08-27 01:56:18.087 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getAllQuizzes()
+2020-08-27 01:56:18.091 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:18.092 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+2020-08-27 01:56:18.106 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:18.266 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:18.268 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:18.323 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Quiz{id=0, title='The Java Logo', text='What is depicted on the Java logo?', options=[Robot, Tea lea (truncated)...]
+2020-08-27 01:56:18.348  INFO 20396 --- [http-nio-8889-exec-1] engine.controller.QuizController         : The quiz is Quiz{id=0, title='The Java Logo', text='What is depicted on the Java logo?', options=[Robot, Tea leaf, Cup of coffee, Bug], answer=[I@134b0807}with answer[I@134b0807
+2020-08-27 01:56:18.349  INFO 20396 --- [http-nio-8889-exec-1] engine.controller.QuizController         : The output will be engine.service.BasicQuizService@7182bb06
+2020-08-27 01:56:18.489 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:18.490 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=3, title='The Java Logo', text='What is depicted on the Java logo?', options=[Robot, Tea lea (truncated)...]
+2020-08-27 01:56:18.509 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:18.695 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/3", parameters={}
+2020-08-27 01:56:18.703 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:18.752 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:18.765 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=3, title='The Java Logo', text='What is depicted on the Java logo?', options=[Robot, Tea lea (truncated)...]
+2020-08-27 01:56:18.769 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:18.957 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/128", parameters={}
+2020-08-27 01:56:18.968 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:18.977 DEBUG 20396 --- [http-nio-8889-exec-5] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Quiz with id {128} could not be found."]
+2020-08-27 01:56:18.978 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2020-08-27 01:56:18.986 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-08-27 01:56:18.988 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:18.990 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:18.990 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:18 IST 2020, status=404, error=Not Found, message=Quiz with id {128} cou (truncated)...]
+2020-08-27 01:56:19.000 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2020-08-27 01:56:19.409 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes", parameters={}
+2020-08-27 01:56:19.411 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getAllQuizzes()
+2020-08-27 01:56:19.424 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:19.427 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Quiz{id=3, title='The Java Logo', text='What is depicted on the Java logo?', options=[Robot, Tea le (truncated)...]
+2020-08-27 01:56:19.438 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:19.620 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:19.623 DEBUG 20396 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:19.627 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Quiz{id=0, title='The Ultimate Question', text='What is the answer to the Ultimate Question of Life, (truncated)...]
+2020-08-27 01:56:19.636  INFO 20396 --- [http-nio-8889-exec-6] engine.controller.QuizController         : The quiz is Quiz{id=0, title='The Ultimate Question', text='What is the answer to the Ultimate Question of Life, the Universe and Everything?', options=[Everything goes right, 42, 2+2=4, 11011100], answer=[I@34dcd341}with answer[I@34dcd341
+2020-08-27 01:56:19.637  INFO 20396 --- [http-nio-8889-exec-6] engine.controller.QuizController         : The output will be engine.service.BasicQuizService@7182bb06
+2020-08-27 01:56:19.652 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:19.653 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=4, title='The Ultimate Question', text='What is the answer to the Ultimate Question of Life, (truncated)...]
+2020-08-27 01:56:19.656 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:19.907 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/4", parameters={}
+2020-08-27 01:56:19.912 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:19.919 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:19.921 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=4, title='The Ultimate Question', text='What is the answer to the Ultimate Question of Life, (truncated)...]
+2020-08-27 01:56:19.923 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:20.162 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/129", parameters={}
+2020-08-27 01:56:20.172 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:20.177 DEBUG 20396 --- [http-nio-8889-exec-8] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Quiz with id {129} could not be found."]
+2020-08-27 01:56:20.178 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2020-08-27 01:56:20.186 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-08-27 01:56:20.188 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:20.190 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:20.190 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:20 IST 2020, status=404, error=Not Found, message=Quiz with id {129} cou (truncated)...]
+2020-08-27 01:56:20.193 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2020-08-27 01:56:20.387 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes", parameters={}
+2020-08-27 01:56:20.391 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getAllQuizzes()
+2020-08-27 01:56:20.397 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:20.401 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Quiz{id=3, title='The Java Logo', text='What is depicted on the Java logo?', options=[Robot, Tea le (truncated)...]
+2020-08-27 01:56:20.409 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:20.488 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-08-27 01:56:20.490 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:20.491 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:20.492 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:20 IST 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-08-27 01:56:20.495 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2020-08-27 01:56:20.523 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:20.525 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:20.526 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:20.527 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:20 IST 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-08-27 01:56:20.533 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2020-08-27 01:56:20.540 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:20.542 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:20.547 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:20.548 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:20 IST 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-08-27 01:56:20.550 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2020-08-27 01:56:20.570 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:20.586 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:20.587 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:20.592 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:20 IST 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-08-27 01:56:20.608 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2020-08-27 01:56:20.617 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:20.619 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:20.620 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:20.621 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:20 IST 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-08-27 01:56:20.624 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2020-08-27 01:56:20.633 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for DELETE "/error", parameters={}
+2020-08-27 01:56:20.634 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:20.636 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:20.637 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:20 IST 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-08-27 01:56:20.641 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2020-08-27 01:56:20.650 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for DELETE "/error", parameters={}
+2020-08-27 01:56:20.676 DEBUG 20396 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:20.677 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:20.678 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:20 IST 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-08-27 01:56:20.682 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
+2020-08-27 01:56:22.056 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/3/solve", parameters={}
+2020-08-27 01:56:22.059 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:22.066 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@69e0470a]
+2020-08-27 01:56:22.072 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:22.072 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:22.075 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:22.223 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/3/solve", parameters={}
+2020-08-27 01:56:22.225 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:22.240 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@640937cf]
+2020-08-27 01:56:22.248 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:22.251 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:22.274 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:22.465 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/3/solve", parameters={}
+2020-08-27 01:56:22.471 DEBUG 20396 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:22.474 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@7c84b47f]
+2020-08-27 01:56:22.493 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:22.494 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@294a6e9d]
+2020-08-27 01:56:22.499 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:22.692 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/3/solve", parameters={}
+2020-08-27 01:56:22.693 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:22.699 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@6c87900e]
+2020-08-27 01:56:22.705 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:22.709 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:22.770 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:22.908 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/4/solve", parameters={}
+2020-08-27 01:56:22.909 DEBUG 20396 --- [http-nio-8889-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:22.914 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@25caaacf]
+2020-08-27 01:56:22.924 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:22.925 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:22.937 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:23.191 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/4/solve", parameters={}
+2020-08-27 01:56:23.196 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:23.199 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@2c0e7f61]
+2020-08-27 01:56:23.204 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:23.204 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@294a6e9d]
+2020-08-27 01:56:23.206 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:23.405 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/4/solve", parameters={}
+2020-08-27 01:56:23.407 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:23.410 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@7a5a1e9a]
+2020-08-27 01:56:23.416 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:23.417 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:23.421 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:23.618 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/4/solve", parameters={}
+2020-08-27 01:56:23.622 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:23.625 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@35b91c9a]
+2020-08-27 01:56:23.634 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:23.636 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:23.642 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:23.786 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes", parameters={}
+2020-08-27 01:56:23.787 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getAllQuizzes()
+2020-08-27 01:56:23.794 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:23.798 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Quiz{id=3, title='The Java Logo', text='What is depicted on the Java logo?', options=[Robot, Tea le (truncated)...]
+2020-08-27 01:56:23.801 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:24.038 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes", parameters={}
+2020-08-27 01:56:24.040 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getAllQuizzes()
+2020-08-27 01:56:24.058 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:24.065 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Quiz{id=3, title='The Java Logo', text='What is depicted on the Java logo?', options=[Robot, Tea le (truncated)...]
+2020-08-27 01:56:24.068 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:24.075 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/actuator/shutdown", parameters={}
+2020-08-27 01:56:24.086 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to []
+2020-08-27 01:56:24.092 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-08-27 01:56:24.094 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [{message=Shutting down, bye...}]
+2020-08-27 01:56:24.181 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:24.700  INFO 20396 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-27 01:56:24.712  INFO 20396 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-27 01:56:24.732  INFO 20396 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-27 01:56:25.023  INFO 20396 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-27 01:56:25.555  INFO 20396 --- [Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on LAPTOP-SA4OJ0K2 with PID 20396 (started by Akshay Babbar in F:\Development\Web Quiz Engine\Web Quiz Engine\task)
+2020-08-27 01:56:25.557  INFO 20396 --- [Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
+2020-08-27 01:56:28.490  INFO 20396 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-27 01:56:28.551  INFO 20396 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-08-27 01:56:28.770  INFO 20396 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-27 01:56:28.933  INFO 20396 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151ms. Found 2 JPA repository interfaces.
+2020-08-27 01:56:29.869  INFO 20396 --- [Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-27 01:56:30.222  WARN 20396 --- [Test worker] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-08-27 01:56:30.609  INFO 20396 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-08-27 01:56:30.611  INFO 20396 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-27 01:56:30.613  INFO 20396 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-27 01:56:30.845  INFO 20396 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-27 01:56:30.845 DEBUG 20396 --- [Test worker] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-08-27 01:56:30.846  INFO 20396 --- [Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5261 ms
+2020-08-27 01:56:31.079  INFO 20396 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-08-27 01:56:31.139  INFO 20396 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-08-27 01:56:31.139  INFO 20396 --- [Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../quizdb'
+2020-08-27 01:56:32.004  INFO 20396 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-27 01:56:32.065  INFO 20396 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-27 01:56:32.954  INFO 20396 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-27 01:56:32.955  INFO 20396 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-27 01:56:33.270  WARN 20396 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-27 01:56:33.926 DEBUG 20396 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2020-08-27 01:56:34.196  INFO 20396 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-08-27 01:56:34.661  INFO 20396 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a6a8c0a, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b22fdb9, org.springframework.security.web.header.HeaderWriterFilter@1ff79bae, org.springframework.security.web.authentication.logout.LogoutFilter@d99671a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5d6305f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38970e4e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b1ec819, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6208a625, org.springframework.security.web.session.SessionManagementFilter@29a87ecf, org.springframework.security.web.access.ExceptionTranslationFilter@41e2408b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7483200e]
+2020-08-27 01:56:34.679  INFO 20396 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-27 01:56:34.964  INFO 20396 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-27 01:56:34.978 DEBUG 20396 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-08-27 01:56:35.095 DEBUG 20396 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-08-27 01:56:35.330 DEBUG 20396 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-08-27 01:56:35.579  INFO 20396 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-27 01:56:35.636  INFO 20396 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-27 01:56:35.686  INFO 20396 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-27 01:56:35.859  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-08-27 01:56:35.864  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-08-27 01:56:35.869  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2020-08-27 01:56:35.896  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2020-08-27 01:56:35.904  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2020-08-27 01:56:35.915  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2020-08-27 01:56:35.920  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2020-08-27 01:56:35.930  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2020-08-27 01:56:35.934  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2020-08-27 01:56:35.942  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2020-08-27 01:56:35.950  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2020-08-27 01:56:35.961  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2020-08-27 01:56:35.966  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2020-08-27 01:56:36.002  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2020-08-27 01:56:36.047  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2020-08-27 01:56:36.062  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2020-08-27 01:56:36.065  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2020-08-27 01:56:36.070  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2020-08-27 01:56:36.084  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingPOST_1
+2020-08-27 01:56:36.092  INFO 20396 --- [Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2020-08-27 01:56:36.271  INFO 20396 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-08-27 01:56:36.273  INFO 20396 --- [Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 11.186 seconds (JVM running for 68.073)
+2020-08-27 01:56:36.338  INFO 20396 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-27 01:56:36.340  INFO 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-27 01:56:36.340 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-08-27 01:56:36.353 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-08-27 01:56:36.354  INFO 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-08-27 01:56:36.734 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes", parameters={}
+2020-08-27 01:56:36.736 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getAllQuizzes()
+2020-08-27 01:56:36.785 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:36.793 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Quiz{id=3, title='The Java Logo', text='What is depicted on the Java logo?', options=[Robot, Tea le (truncated)...]
+2020-08-27 01:56:36.823 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:37.017 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes", parameters={}
+2020-08-27 01:56:37.018 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getAllQuizzes()
+2020-08-27 01:56:37.031 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:37.035 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Quiz{id=3, title='The Java Logo', text='What is depicted on the Java logo?', options=[Robot, Tea le (truncated)...]
+2020-08-27 01:56:37.042 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:37.260 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/3/solve", parameters={}
+2020-08-27 01:56:37.262 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:37.266 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@78ce22d3]
+2020-08-27 01:56:37.275 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:37.275 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@294a6e9d]
+2020-08-27 01:56:37.286 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:37.479 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/3/solve", parameters={}
+2020-08-27 01:56:37.481 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:37.482 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@316d6557]
+2020-08-27 01:56:37.488 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:37.489 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:37.496 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:37.685 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/4/solve", parameters={}
+2020-08-27 01:56:37.686 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:37.693 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@33e61315]
+2020-08-27 01:56:37.702 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:37.702 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:37.710 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:37.879 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/4/solve", parameters={}
+2020-08-27 01:56:37.880 DEBUG 20396 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:37.883 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@2abfa0f]
+2020-08-27 01:56:37.887 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:37.887 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@294a6e9d]
+2020-08-27 01:56:37.892 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:38.083 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:38.085 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:38.093 DEBUG 20396 --- [http-nio-8889-exec-7] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public engine.entity.Quiz engine.controller.QuizController.addQuiz(engine.entity.Quiz): JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 4, column: 4]
+2020-08-27 01:56:38.095  WARN 20396 --- [http-nio-8889-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 4, column: 4]]
+2020-08-27 01:56:38.095 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:38.097 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:38.100 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:38.104 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:38.104 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:38 IST 2020, status=400, error=Bad Request, message=JSON parse error: Un (truncated)...]
+2020-08-27 01:56:38.112 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:38.265 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:38.266 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:38.268 DEBUG 20396 --- [http-nio-8889-exec-8] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public engine.entity.Quiz engine.controller.QuizController.addQuiz(engine.entity.Quiz): JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 5, column: 4]
+2020-08-27 01:56:38.269  WARN 20396 --- [http-nio-8889-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 5, column: 4]]
+2020-08-27 01:56:38.270 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:38.275 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:38.277 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:38.279 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:38.280 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:38 IST 2020, status=400, error=Bad Request, message=JSON parse error: Un (truncated)...]
+2020-08-27 01:56:38.287 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:38.470 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:38.470 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:38.475 DEBUG 20396 --- [http-nio-8889-exec-9] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public engine.entity.Quiz engine.controller.QuizController.addQuiz(engine.entity.Quiz): JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 4, column: 4]
+2020-08-27 01:56:38.481  WARN 20396 --- [http-nio-8889-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 4, column: 4]]
+2020-08-27 01:56:38.481 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:38.485 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:38.487 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:38.496 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:38.497 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:38 IST 2020, status=400, error=Bad Request, message=JSON parse error: Un (truncated)...]
+2020-08-27 01:56:38.514 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:38.715 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:38.717 DEBUG 20396 --- [http-nio-8889-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:38.719 DEBUG 20396 --- [http-nio-8889-exec-10] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public engine.entity.Quiz engine.controller.QuizController.addQuiz(engine.entity.Quiz): JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 5, column: 4]
+2020-08-27 01:56:38.720  WARN 20396 --- [http-nio-8889-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 5, column: 4]]
+2020-08-27 01:56:38.720 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:38.726 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:38.727 DEBUG 20396 --- [http-nio-8889-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:38.728 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:38.729 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:38 IST 2020, status=400, error=Bad Request, message=JSON parse error: Un (truncated)...]
+2020-08-27 01:56:38.730 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:38.919 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:38.920 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:38.922 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Quiz{id=0, title='The Ultimate Question', text='123123123', options=[], answer=[I@584c3857}]
+2020-08-27 01:56:39.034  WARN 20396 --- [http-nio-8889-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public engine.entity.Quiz engine.controller.QuizController.addQuiz(engine.entity.Quiz): [Field error in object 'quiz' on field 'options': rejected value [[]]; codes [Size.quiz.options,Size.options,Size.java.util.List,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quiz.options,options]; arguments []; default message [options],2147483647,2]; default message [size must be between 2 and 2147483647]] ]
+2020-08-27 01:56:39.037 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:39.083 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:39.085 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:39.086 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:39.087 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:39 IST 2020, status=400, error=Bad Request, errors=[Field error in objec (truncated)...]
+2020-08-27 01:56:39.099 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:39.281 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:39.282 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:39.284 DEBUG 20396 --- [http-nio-8889-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public engine.entity.Quiz engine.controller.QuizController.addQuiz(engine.entity.Quiz): JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 5, column: 4]
+2020-08-27 01:56:39.284  WARN 20396 --- [http-nio-8889-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 5, column: 4]]
+2020-08-27 01:56:39.285 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:39.286 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:39.292 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:39.293 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:39.294 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:39 IST 2020, status=400, error=Bad Request, message=JSON parse error: Un (truncated)...]
+2020-08-27 01:56:39.297 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:39.516 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:39.517 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:39.519 DEBUG 20396 --- [http-nio-8889-exec-2] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public engine.entity.Quiz engine.controller.QuizController.addQuiz(engine.entity.Quiz): JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 5, column: 4]
+2020-08-27 01:56:39.520  WARN 20396 --- [http-nio-8889-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 5, column: 4]]
+2020-08-27 01:56:39.521 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-08-27 01:56:39.524 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-08-27 01:56:39.526 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:39.527 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:39.527 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:39 IST 2020, status=400, error=Bad Request, message=JSON parse error: Un (truncated)...]
+2020-08-27 01:56:39.530 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-08-27 01:56:39.744 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:39.745 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:39.746 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Quiz{id=0, title='Math1', text='Which of the following is equal to 4?', options=[1+3, 2+2, 8-1, 1+5] (truncated)...]
+2020-08-27 01:56:39.748  INFO 20396 --- [http-nio-8889-exec-4] engine.controller.QuizController         : The quiz is Quiz{id=0, title='Math1', text='Which of the following is equal to 4?', options=[1+3, 2+2, 8-1, 1+5], answer=[I@54e5f5ac}with answer[I@54e5f5ac
+2020-08-27 01:56:39.749  INFO 20396 --- [http-nio-8889-exec-4] engine.controller.QuizController         : The output will be engine.service.BasicQuizService@500979bd
+2020-08-27 01:56:39.764 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:39.765 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=5, title='Math1', text='Which of the following is equal to 4?', options=[1+3, 2+2, 8-1, 1+5] (truncated)...]
+2020-08-27 01:56:39.777 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:40.032 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/5", parameters={}
+2020-08-27 01:56:40.034 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:40.115 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:40.116 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=5, title='Math1', text='Which of the following is equal to 4?', options=[1+3, 2+2, 8-1, 1+5] (truncated)...]
+2020-08-27 01:56:40.119 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:40.319 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/130", parameters={}
+2020-08-27 01:56:40.325 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:40.331 DEBUG 20396 --- [http-nio-8889-exec-4] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Quiz with id {130} could not be found."]
+2020-08-27 01:56:40.332 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2020-08-27 01:56:40.334 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-08-27 01:56:40.336 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:40.344 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:40.345 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:40 IST 2020, status=404, error=Not Found, message=Quiz with id {130} cou (truncated)...]
+2020-08-27 01:56:40.367 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2020-08-27 01:56:40.567 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:40.570 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:40.578 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@1ba786d0]
+2020-08-27 01:56:40.584 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:40.585 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:40.598 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:40.737 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:40.741 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:40.743 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@682bfd10]
+2020-08-27 01:56:40.747 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:40.747 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:40.751 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:40.910 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:40.911 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:40.913 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@33b5345e]
+2020-08-27 01:56:40.916 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:40.917 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:40.919 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:41.123 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:41.124 DEBUG 20396 --- [http-nio-8889-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:41.129 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@22d2fe0b]
+2020-08-27 01:56:41.134 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:41.135 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:41.143 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:41.306 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:41.307 DEBUG 20396 --- [http-nio-8889-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:41.310 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@4f08cce]
+2020-08-27 01:56:41.314 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:41.314 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:41.316 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:41.510 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:41.511 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:41.514 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@64481f3a]
+2020-08-27 01:56:41.518 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:41.519 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@294a6e9d]
+2020-08-27 01:56:41.531 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:41.747 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:41.749 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:41.750 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@40d0b52d]
+2020-08-27 01:56:41.757 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:41.758 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:41.766 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:41.941 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:41.943 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:41.945 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@3cf2d4b1]
+2020-08-27 01:56:41.952 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:41.957 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:41.962 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:42.142 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:42.144 DEBUG 20396 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:42.145 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@509f6b2]
+2020-08-27 01:56:42.149 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:42.150 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:42.153 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:42.333 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:42.334 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:42.335 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@918ff50]
+2020-08-27 01:56:42.346 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:42.346 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:42.349 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:42.494 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:42.495 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:42.497 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@b3a5de]
+2020-08-27 01:56:42.500 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:42.501 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:42.509 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:42.652 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:42.657 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:42.661 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@2287a02c]
+2020-08-27 01:56:42.665 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:42.665 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:42.678 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:42.827 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:42.829 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:42.830 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@41e48ce8]
+2020-08-27 01:56:42.833 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:42.834 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:42.835 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:43.061 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:43.063 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:43.064 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@28ec4e7d]
+2020-08-27 01:56:43.071 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:43.072 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:43.078 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:43.243 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/5/solve", parameters={}
+2020-08-27 01:56:43.244 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:43.246 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@4ced608a]
+2020-08-27 01:56:43.250 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:43.250 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:43.252 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:43.448 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:43.449 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:43.450 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Quiz{id=0, title='Math2', text='Which of the following is equal to 4?', options=[1+1, 2+2, 8-1, 5-1] (truncated)...]
+2020-08-27 01:56:43.451  INFO 20396 --- [http-nio-8889-exec-3] engine.controller.QuizController         : The quiz is Quiz{id=0, title='Math2', text='Which of the following is equal to 4?', options=[1+1, 2+2, 8-1, 5-1], answer=[I@3c4f6cc7}with answer[I@3c4f6cc7
+2020-08-27 01:56:43.452  INFO 20396 --- [http-nio-8889-exec-3] engine.controller.QuizController         : The output will be engine.service.BasicQuizService@500979bd
+2020-08-27 01:56:43.467 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:43.467 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=6, title='Math2', text='Which of the following is equal to 4?', options=[1+1, 2+2, 8-1, 5-1] (truncated)...]
+2020-08-27 01:56:43.472 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:43.663 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/6", parameters={}
+2020-08-27 01:56:43.666 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:43.676 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:43.681 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=6, title='Math2', text='Which of the following is equal to 4?', options=[1+1, 2+2, 8-1, 5-1] (truncated)...]
+2020-08-27 01:56:43.684 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:43.832 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/131", parameters={}
+2020-08-27 01:56:43.833 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:43.839 DEBUG 20396 --- [http-nio-8889-exec-5] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Quiz with id {131} could not be found."]
+2020-08-27 01:56:43.839 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2020-08-27 01:56:43.840 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-08-27 01:56:43.841 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:43.842 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:43.843 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:43 IST 2020, status=404, error=Not Found, message=Quiz with id {131} cou (truncated)...]
+2020-08-27 01:56:43.846 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2020-08-27 01:56:43.993 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:43.994 DEBUG 20396 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:43.996 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@62af3c78]
+2020-08-27 01:56:43.999 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:43.999 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:44.000 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:44.180 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:44.181 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:44.183 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@556b1c62]
+2020-08-27 01:56:44.191 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:44.192 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:44.195 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:44.340 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:44.342 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:44.343 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@6590365d]
+2020-08-27 01:56:44.346 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:44.347 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:44.349 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:44.491 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:44.492 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:44.493 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@5d9e5cf0]
+2020-08-27 01:56:44.496 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:44.496 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:44.500 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:44.656 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:44.657 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:44.658 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@382f5fbe]
+2020-08-27 01:56:44.661 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:44.662 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:44.663 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:44.781 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:44.781 DEBUG 20396 --- [http-nio-8889-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:44.783 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@8a5502c]
+2020-08-27 01:56:44.792 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:44.793 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:44.822 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:44.989 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:44.993 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:44.996 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@61f71aef]
+2020-08-27 01:56:44.999 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:45.001 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:45.051 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:45.222 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:45.224 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:45.225 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@b422f49]
+2020-08-27 01:56:45.229 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:45.229 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:45.243 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:45.365 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:45.366 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:45.367 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@e1b332f]
+2020-08-27 01:56:45.372 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:45.373 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:45.375 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:45.496 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:45.497 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:45.498 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@65e9ec28]
+2020-08-27 01:56:45.501 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:45.501 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@294a6e9d]
+2020-08-27 01:56:45.506 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:45.642 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:45.643 DEBUG 20396 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:45.645 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@11cb1d69]
+2020-08-27 01:56:45.649 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:45.649 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:45.650 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:45.780 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:45.781 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:45.782 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@42572d40]
+2020-08-27 01:56:45.784 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:45.784 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:45.793 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:45.942 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:45.943 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:45.944 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@5d7bf88]
+2020-08-27 01:56:45.947 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:45.947 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:45.950 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:46.082 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:46.083 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:46.095 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@57398398]
+2020-08-27 01:56:46.100 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:46.100 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:46.107 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:46.250 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/6/solve", parameters={}
+2020-08-27 01:56:46.251 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:46.255 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@59c82234]
+2020-08-27 01:56:46.259 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:46.259 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:46.260 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:46.515 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:46.516 DEBUG 20396 --- [http-nio-8889-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:46.517 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Quiz{id=0, title='Math3', text='Which of the following is equal to 4?', options=[2*3, 5*8, 8*0, 1*5] (truncated)...]
+2020-08-27 01:56:46.520  INFO 20396 --- [http-nio-8889-exec-10] engine.controller.QuizController         : The quiz is Quiz{id=0, title='Math3', text='Which of the following is equal to 4?', options=[2*3, 5*8, 8*0, 1*5], answer=[I@54e4b69}with answer[I@54e4b69
+2020-08-27 01:56:46.521  INFO 20396 --- [http-nio-8889-exec-10] engine.controller.QuizController         : The output will be engine.service.BasicQuizService@500979bd
+2020-08-27 01:56:46.528 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:46.529 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=7, title='Math3', text='Which of the following is equal to 4?', options=[2*3, 5*8, 8*0, 1*5] (truncated)...]
+2020-08-27 01:56:46.530 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:46.746 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/7", parameters={}
+2020-08-27 01:56:46.748 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:46.754 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:46.759 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=7, title='Math3', text='Which of the following is equal to 4?', options=[2*3, 5*8, 8*0, 1*5] (truncated)...]
+2020-08-27 01:56:46.761 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:46.908 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/132", parameters={}
+2020-08-27 01:56:46.909 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:46.912 DEBUG 20396 --- [http-nio-8889-exec-3] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Quiz with id {132} could not be found."]
+2020-08-27 01:56:46.912 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2020-08-27 01:56:46.914 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-08-27 01:56:46.916 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:46.917 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:46.925 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:46 IST 2020, status=404, error=Not Found, message=Quiz with id {132} cou (truncated)...]
+2020-08-27 01:56:46.930 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2020-08-27 01:56:47.091 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:47.092 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:47.094 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@eb7668e]
+2020-08-27 01:56:47.099 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:47.099 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@294a6e9d]
+2020-08-27 01:56:47.100 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:47.240 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:47.241 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:47.242 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@4ffb1b9b]
+2020-08-27 01:56:47.244 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:47.244 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:47.246 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:47.381 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:47.382 DEBUG 20396 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:47.384 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@434aba00]
+2020-08-27 01:56:47.390 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:47.391 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:47.394 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:47.538 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:47.539 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:47.541 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@e891863]
+2020-08-27 01:56:47.543 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:47.543 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:47.544 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:47.689 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:47.691 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:47.693 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@166ba043]
+2020-08-27 01:56:47.696 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:47.697 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:47.699 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:47.846 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:47.847 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:47.849 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@37e9977c]
+2020-08-27 01:56:47.855 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:47.856 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:47.859 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:48.012 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:48.013 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:48.014 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@4741762c]
+2020-08-27 01:56:48.022 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:48.022 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:48.024 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:48.174 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:48.175 DEBUG 20396 --- [http-nio-8889-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:48.176 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@58dfcab7]
+2020-08-27 01:56:48.178 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:48.179 DEBUG 20396 --- [http-nio-8889-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:48.180 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:48.323 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:48.325 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:48.326 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@68f5fedf]
+2020-08-27 01:56:48.330 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:48.330 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:48.333 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:48.478 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:48.480 DEBUG 20396 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:48.481 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@7f83fe82]
+2020-08-27 01:56:48.484 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:48.488 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:48.490 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:48.691 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:48.692 DEBUG 20396 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:48.693 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@14683955]
+2020-08-27 01:56:48.696 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:48.697 DEBUG 20396 --- [http-nio-8889-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:48.709 DEBUG 20396 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:48.878 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:48.880 DEBUG 20396 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:48.880 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@51805a6]
+2020-08-27 01:56:48.889 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:48.890 DEBUG 20396 --- [http-nio-8889-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:48.893 DEBUG 20396 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:49.037 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:49.040 DEBUG 20396 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:49.042 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@1670e7b6]
+2020-08-27 01:56:49.047 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:49.047 DEBUG 20396 --- [http-nio-8889-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:49.049 DEBUG 20396 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:49.205 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:49.209 DEBUG 20396 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:49.211 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@38a0ece0]
+2020-08-27 01:56:49.215 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:49.215 DEBUG 20396 --- [http-nio-8889-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:49.242 DEBUG 20396 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:49.382 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/7/solve", parameters={}
+2020-08-27 01:56:49.382 DEBUG 20396 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:49.386 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@6604d161]
+2020-08-27 01:56:49.389 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:49.390 DEBUG 20396 --- [http-nio-8889-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:49.411 DEBUG 20396 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:49.603 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes", parameters={}
+2020-08-27 01:56:49.605 DEBUG 20396 --- [http-nio-8889-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#addQuiz(Quiz)
+2020-08-27 01:56:49.609 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Quiz{id=0, title='Math4', text='Which of the following is equal to 4?', options=[2*3, 5*8, 8*0, 1*5] (truncated)...]
+2020-08-27 01:56:49.612  INFO 20396 --- [http-nio-8889-exec-8] engine.controller.QuizController         : The quiz is Quiz{id=0, title='Math4', text='Which of the following is equal to 4?', options=[2*3, 5*8, 8*0, 1*5], answer=null}with answernull
+2020-08-27 01:56:49.613  INFO 20396 --- [http-nio-8889-exec-8] engine.controller.QuizController         : The output will be engine.service.BasicQuizService@500979bd
+2020-08-27 01:56:49.638 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:49.640 DEBUG 20396 --- [http-nio-8889-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=8, title='Math4', text='Which of the following is equal to 4?', options=[2*3, 5*8, 8*0, 1*5] (truncated)...]
+2020-08-27 01:56:49.644 DEBUG 20396 --- [http-nio-8889-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:49.790 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/8", parameters={}
+2020-08-27 01:56:49.791 DEBUG 20396 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:49.794 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:49.796 DEBUG 20396 --- [http-nio-8889-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [Quiz{id=8, title='Math4', text='Which of the following is equal to 4?', options=[2*3, 5*8, 8*0, 1*5] (truncated)...]
+2020-08-27 01:56:49.797 DEBUG 20396 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:49.936 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/quizzes/133", parameters={}
+2020-08-27 01:56:49.940 DEBUG 20396 --- [http-nio-8889-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#getQuizWithId(long)
+2020-08-27 01:56:49.943 DEBUG 20396 --- [http-nio-8889-exec-10] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Quiz with id {133} could not be found."]
+2020-08-27 01:56:49.943 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2020-08-27 01:56:49.944 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-08-27 01:56:49.945 DEBUG 20396 --- [http-nio-8889-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-27 01:56:49.946 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:49.946 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 27 01:56:49 IST 2020, status=404, error=Not Found, message=Quiz with id {133} cou (truncated)...]
+2020-08-27 01:56:49.947 DEBUG 20396 --- [http-nio-8889-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2020-08-27 01:56:50.078 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/quizzes/8/solve", parameters={}
+2020-08-27 01:56:50.078 DEBUG 20396 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to engine.controller.QuizController#solveQuiz(long, Answer)
+2020-08-27 01:56:50.079 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [engine.entity.Answer@3c752310]
+2020-08-27 01:56:50.082 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-27 01:56:50.085 DEBUG 20396 --- [http-nio-8889-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [engine.entity.Response@9b47263]
+2020-08-27 01:56:50.089 DEBUG 20396 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:50.099 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/actuator/shutdown", parameters={}
+2020-08-27 01:56:50.102 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to []
+2020-08-27 01:56:50.103 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-08-27 01:56:50.107 DEBUG 20396 --- [http-nio-8889-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{message=Shutting down, bye...}]
+2020-08-27 01:56:50.109 DEBUG 20396 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-08-27 01:56:50.178  INFO 20396 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-27 01:56:50.181  INFO 20396 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-27 01:56:50.199  INFO 20396 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-08-27 01:56:50.246  INFO 20396 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
